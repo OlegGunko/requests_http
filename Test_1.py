@@ -4,7 +4,7 @@ import yadisk
 API_KEY = 'trnsl.1.1.20190712T081241Z.0309348472c8719d.0efdbc7ba1c507292080e3fbffe4427f7ce9a9f0'
 URL = 'https://translate.yandex.net/api/v1.5/tr.json/translate'
 
-y = yadisk.YaDisk(token='AgAAAAAxud8GAADLW6gJtml83EoalLH_SUk-tOc')
+y = yadisk.YaDisk(token=token)
 
 def translate_it(file_from, file_to, lang_from, lang_to='ru'):
     with open(file_from, encoding='UTF-8') as f:
